@@ -1,8 +1,9 @@
+import { Banner } from "../conponents/Banner"
 
 export const Home = () => {
   return (
 
-    <div>home</div>
+    <Banner/>
     
   )
 }
