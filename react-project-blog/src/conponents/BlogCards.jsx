@@ -9,7 +9,7 @@ const BlogCards = ({blogs,currentPage,selectCategory,pageSize}) => {
   return (
     <div className='grid  md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8'>
       {
-        filteredBlogs.map((blog) => <Link key={blog.id} className='p-5 shadow-lg rounded cursor-pointer' >
+        filteredBlogs.map((blog) => <Link to={`/blogs/${blog.id}`} key={blog.id} className='p-5 shadow-lg rounded cursor-pointer' >
           <div>
             <img src={blog.image} alt='' className='w-full'/>
             <h3 className='mt-4 mb-2 font-bold hover:text-blue-600 cursor-pointer'>{blog.title}</h3>
