@@ -1,7 +1,7 @@
 import { useLoaderData } from "react-router-dom"
 import { FaUser } from "react-icons/fa";
 import { FaClock } from "react-icons/fa";
-import SideBar from "../conponents/SideBar";
+import SideBar from "../conponents/Blogs/SideBar";
 
 const SingleBlog = () => {
     const data = useLoaderData();

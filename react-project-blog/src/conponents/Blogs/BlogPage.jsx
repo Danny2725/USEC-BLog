@@ -4,7 +4,6 @@ import Pagination from "./Pagination";
 import CategorySelection from "./CategorySelection";
 import SideBar from "./SideBar";
 
-
 export const BlogPage = () => {
     const [blogs,setBlogs] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
@@ -14,7 +13,6 @@ export const BlogPage = () => {
     useEffect(()=> {
         async function fetchBlogs() { 
             let url = `http://localhost:5000/blogs?page=${currentPage}&limit=${pageSize}`;
-
             // filter Categories
             if (selectCategory){
                 url += `$category=${selectCategory}`;

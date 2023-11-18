@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 
-const Modal = ({isOpen,onClose}) => {
+const Login = ({isOpen,onClose}) => {
   return (
     <div className={`fixed top-0 left-0 w-full h-full flex items-center justify-center ${isOpen ? "" : "hidden"}`}>
 
@@ -41,4 +41,4 @@ const Modal = ({isOpen,onClose}) => {
   )
 }
 
-export default Modal
+export default Login
