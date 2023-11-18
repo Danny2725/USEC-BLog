@@ -10,8 +10,8 @@ import { Home } from './Page/home.jsx';
 import { Blogs } from './Page/Blogs.jsx';
 import About from './Page/About.jsx';
 import Contact from './Page/Contact.jsx';
-import Services from './Page/Services.jsx';
 import SingleBlog from './Page/SingleBlog.jsx';
+import { Member } from './Page/Member.jsx';
 
 const router = createBrowserRouter([
   {
@@ -35,8 +35,8 @@ const router = createBrowserRouter([
         element: <Contact/> 
       },
       {
-        path: "/services",
-        element: <Services/> 
+        path: "/Member",
+        element: <Member/> 
       },
       {
         path: "/blogs/:id",
