@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa6";
 
+
 export const Banner = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const images = [
