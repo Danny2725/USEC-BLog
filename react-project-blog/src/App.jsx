@@ -9,10 +9,12 @@ function App() {
 
   return (
     <>
+    <div style={{backgroundColor:'#030c1a'}}>
       <Navbar/>
       <Banner/>
       <Outlet/>
       <Footer/>
+      </div>
     </>
   )
 }

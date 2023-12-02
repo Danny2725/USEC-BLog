@@ -44,3 +44,33 @@
     width: 100px;
     height: auto;
 }
+.active-link{
+    color: gray; /* hoặc bất kỳ màu nào bạn muốn sử dụng khi active */
+
+}
+:where(.css-dev-only-do-not-override-2q8sxy).ant-menu-light.ant-menu-horizontal > .ant-menu-item-selected,
+:where(.css-dev-only-do-not-override-2q8sxy).ant-menu-light > .ant-menu.ant-menu-horizontal > .ant-menu-item-selected {
+    color: gray;
+    text-decoration: none; /* Remove underline */
+    border-bottom-color:none
+}
+.LoginRegister-module_or_txt_wrap_left__23aRU {
+    background-image: linear-gradient( to right, rgba(0, 242, 254, 0) 0%, #1a2d4a 100% );
+    height: 2px;
+    width: 50%;
+}
+.LoginRegister-module_or_txt_wrap_right__3wUyP {
+    background-image: linear-gradient( to right, #1a2d4a 0%, rgba(0, 242, 254, 0) 100% );
+    height: 2px;
+    width: 50%;
+}
+.text .h3::after{
+    position: absolute;
+    left: 0;
+    top: -6px;
+    height: 32px;
+    width: 4px;
+    background: #e53637;
+    content: "";
+    box-sizing: border-box;
+}
