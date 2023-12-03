@@ -29,17 +29,17 @@ export const BlogPage = () => {
         setCurrentPage(pageNumber);
     }
 
-    const handleCategoryChange = (category) => {
-        setSelectCategory(category)
-        setCurrentPage(1)
-        setActiveCategory(category)
-     }
+    // const handleCategoryChange = (category) => {
+    //     setSelectCategory(category)
+    //     setCurrentPage(1)
+    //     setActiveCategory(category)
+    //  }
   return (
     <div>
         {/* category section */}
-        <div>
+        {/* <div>
             <CategorySelection onSelecCategory={handleCategoryChange} selectCategory={selectCategory} activeCategory={activeCategory}/>
-        </div>
+        </div> */}
         {/* Blog card section */}
         <div className="flex flex-col lg:flex-row gap-12">
         {/* blogcard components */}

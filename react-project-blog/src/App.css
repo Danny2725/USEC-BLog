@@ -74,3 +74,8 @@
     content: "";
     box-sizing: border-box;
 }
+/* Thêm vào CSS của bạn */
+a.highlight {
+    background-color: orange;
+    /* Các thuộc tính CSS khác cho nền cam */
+}
