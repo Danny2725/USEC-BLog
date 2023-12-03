@@ -42,3 +42,49 @@ const Login = ({isOpen,onClose}) => {
 }
 
 export default Login
+// import React from 'react';
+// import { Modal, Form, Input, Button } from 'antd';
+// import { UserOutlined, LockOutlined } from '@ant-design/icons';
+
+// const Login = ({ isOpen, onClose }) => {
+//   const onFinish = (values) => {
+//     console.log('Received values:', values);
+//     // Add your login logic here
+//   };
+
+//   return (
+//     <Modal
+//       title="Login"
+//       visible={isOpen}
+//       onCancel={onClose}
+//       footer={null}
+//     >
+//       <Form
+//         name="loginForm"
+//         initialValues={{ remember: true }}
+//         onFinish={onFinish}
+//       >
+//         <Form.Item
+//           name="username"
+//           rules={[{ required: true, message: 'Please input your username!' }]}
+//         >
+//           <Input prefix={<UserOutlined />} placeholder="Username" />
+//         </Form.Item>
+
+//         <Form.Item
+//           name="password"
+//           rules={[{ required: true, message: 'Please input your password!' }]}
+//         >
+//           <Input.Password prefix={<LockOutlined />} placeholder="Password" />
+//         </Form.Item>
+
+//         <Form.Item>
+//           <Button type="primary" htmlType="submit" className="w-full">
+//             Log in
+//           </Button>
+//         </Form.Item>
+//       </Form>
+//     </Modal>
+//   );
+// };
+// export { Login };
