@@ -11,7 +11,7 @@ const SideBar = () => {
     return (
         <div>
             <div>
-                <h3 className="uppercase font-bold text-2xl font-semibold px-4 text-white text" style={{ borderLeft: '4px solid #e53637' }}>Latest Blogs</h3>
+                {/* <h3 className="uppercase font-bold text-2xl font-semibold px-4 text-white text" style={{ borderLeft: '4px solid #e53637' }}>Latest Blogs</h3>
                 <div>
                     {
                         popularBlogs.slice(0, 5).map(blog => <div key={blog.id} className="my-5 border-b-2 border-spacing-2 px-4">
@@ -21,11 +21,11 @@ const SideBar = () => {
                             /></Link>
                         </div>)
                     }
-                </div>
+                </div> */}
             </div>
             {/* popular blogs */}
 
-            <div >
+            {/* <div >
                 <h3 className="uppercase font-bold text-2xl font-semibold px-4 mt-20 text-white" style={{ borderLeft: '4px solid #e53637' }}>popular Blogs</h3>
                 <div>
                     {
@@ -37,7 +37,7 @@ const SideBar = () => {
                         </div>)
                     }
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

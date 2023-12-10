@@ -27,6 +27,10 @@ const router = createBrowserRouter([
         element: <Blogs/> // Add a path value here
       },
       {
+        path: "/GiaiDau",
+        element: <Blogs/> // Add a path value here
+      },
+      {
         path: "/about",
         element: <About/> 
       },

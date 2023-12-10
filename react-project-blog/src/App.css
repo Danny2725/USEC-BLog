@@ -15,7 +15,7 @@
 }
 
 .pagination li {
-   margin: 0 5px; 
+    margin: 0 5px;
 }
 
 .pagination a {
@@ -24,11 +24,11 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
 }
 
 .pagination a:hover {
-    background: #eee;
+    background: #555555;
 }
 
 .pagination li.activePagination {
@@ -40,31 +40,18 @@
 .active-button {
     color: #fc3c1a;
 }
+
 .logoCLB {
     width: 100px;
     height: auto;
 }
-.active-link{
-    color: gray; /* hoặc bất kỳ màu nào bạn muốn sử dụng khi active */
+
+.active-link {
+    color: gray;
+    /* hoặc bất kỳ màu nào bạn muốn sử dụng khi active */
 
 }
-:where(.css-dev-only-do-not-override-2q8sxy).ant-menu-light.ant-menu-horizontal > .ant-menu-item-selected,
-:where(.css-dev-only-do-not-override-2q8sxy).ant-menu-light > .ant-menu.ant-menu-horizontal > .ant-menu-item-selected {
-    color: gray;
-    text-decoration: none; /* Remove underline */
-    border-bottom-color:none
-}
-.LoginRegister-module_or_txt_wrap_left__23aRU {
-    background-image: linear-gradient( to right, rgba(0, 242, 254, 0) 0%, #1a2d4a 100% );
-    height: 2px;
-    width: 50%;
-}
-.LoginRegister-module_or_txt_wrap_right__3wUyP {
-    background-image: linear-gradient( to right, #1a2d4a 0%, rgba(0, 242, 254, 0) 100% );
-    height: 2px;
-    width: 50%;
-}
-.text .h3::after{
+.text .h3::after {
     position: absolute;
     left: 0;
     top: -6px;
@@ -73,4 +60,15 @@
     background: #e53637;
     content: "";
     box-sizing: border-box;
+}
+
+/* styles.css (hoặc tệp CSS của bạn) */
+.hover-scale {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.hover-scale:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
