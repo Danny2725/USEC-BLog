@@ -1,2 +1,0 @@
-Chạy BE: npm start
-chạy FE: npm run dev
