@@ -17,5 +17,6 @@
 Chạy `npm start` để chạy frontend và backend cùng lúc.
 
 Nếu cần chạy 1 trong 2:
-    - Backend: `npm run backend`
-    - Frontend: `npm run frontend`
+
+- Backend: `npm run backend`
+- Frontend: `npm run frontend`
