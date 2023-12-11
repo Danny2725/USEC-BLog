@@ -1,5 +1,13 @@
 {
   "dependencies": {
     "date-fns": "^2.30.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "scripts": {
+    "start:frontend": "cd usec-blog-frontend && npm run dev",
+    "start:backend": "cd usec-blog-backend && npm start",
+    "start": "concurrently --names \"FRONTEND,BACKEND\" --prefix \"[{time}] - {name} \" --prefix-colors \"bgRed,bgBlue\" \"npm run start:frontend\" \"npm run start:backend\""
   }
 }
