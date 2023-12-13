@@ -7,18 +7,17 @@ function parseAllowedHosts(allowedHosts) {
     /**
      * @type {string[] | "*"}
      */
-    let parsedAllowedHosts
+    let parsedAllowedHosts;
     if (allowedHosts) {
         if (allowedHosts.includes(",")) {
-            parsedAllowedHosts = allowedHosts.split(",")
+            parsedAllowedHosts = allowedHosts.split(",");
         } else if (allowedHosts === "*") {
-            parsedAllowedHosts = "*"
+            parsedAllowedHosts = "*";
         }
     }
-    console.log(parsedAllowedHosts)
-    return parsedAllowedHosts
+    return parsedAllowedHosts;
 }
 
 module.exports = {
     parseAllowedHosts,
-}
+};

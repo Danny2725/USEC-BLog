@@ -2,7 +2,7 @@
     "include": [
         "api/**/*",
         "middleware/**/*",
-        "utils/**/*",
+        "src/utils/**/*",
         "index.js",
     ],
     "exclude": [
@@ -32,7 +32,7 @@
                 "middleware/*"
             ],
             "utils/*": [
-                "utils/*"
+                "src/utils/*"
             ],
             "index.js": [
                 "index.js"
