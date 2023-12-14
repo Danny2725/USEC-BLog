@@ -103,14 +103,8 @@ export const Navbar = () => {
 
                 {/* menu icons */}
                 <div className="text-white lg:flex gap-4 items-center hidden">
-                    <a  className="hover:scale-125 transform transition-transform">
+                    <a href="https://www.facebook.com/hcmusec" className="hover:scale-125 transform transition-transform">
                         <FacebookOutlined className="" />
-                    </a>
-                    <a  className="hover:scale-125 transform transition-transform">
-                        <GithubOutlined className="" />
-                    </a>
-                    <a  className="hover:scale-125 transform transition-transform">
-                        <InstagramOutlined className="" />
                     </a>
                     <Button
                         onClick={openModal}
