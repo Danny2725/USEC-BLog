@@ -1,0 +1,42 @@
+{
+    "include": [
+        "api/**/*",
+        "middleware/**/*",
+        "src/utils/**/*",
+        "index.js",
+    ],
+    "exclude": [
+        "node_modules",
+    ],
+    "module": "commonjs",
+    "target": "ESNext",
+    "lib": [
+        "esnext",
+        "dom"
+    ],
+    "strict": false,
+    "allowJs": true,
+    "checkJs": true,
+    "compilerOptions": {
+        "baseUrl": "./",
+        "checkJs": true,
+        "allowJs": true,
+        "esModuleInterop": true,
+        "module": "commonjs",
+        "resolveJsonModule": true,
+        "paths": {
+            "api/*": [
+                "api/*"
+            ],
+            "middleware/*": [
+                "middleware/*"
+            ],
+            "utils/*": [
+                "src/utils/*"
+            ],
+            "index.js": [
+                "index.js"
+            ]
+        }
+    },
+}

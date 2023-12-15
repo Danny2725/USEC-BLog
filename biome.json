@@ -12,14 +12,14 @@
 	"formatter": {
 		"enabled": true,
 		"formatWithErrors": true,
-		"indentSize": 4,
+		"indentWidth": 4,
 		"indentStyle": "space",
 		"lineEnding": "lf"
 	},
-	"javascript":{
+	"javascript": {
 		"formatter": {
 			"quoteStyle": "double",
-			"semicolons": "asNeeded"
+			"semicolons": "always"
 		}
 	}
 }
