@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+
 require("dotenv").config();
 
 const app = express();
@@ -7,6 +8,7 @@ const port = Number(process.env.SERVER_PORT) || 5000;
 const host = process.env.SERVER_HOST || "0.0.0.0";
 
 const { parseAllowedHosts } = require("./src/utils/parseAllowedHosts");
+const dbClient = require("./db");
 
 const cors = require("cors");
 /**
@@ -42,7 +44,20 @@ app.get("/", (req, res) => {
 
 app.use("/posts", require("./src/routes/posts"));
 
-// Serve backend
+dbClient.connect(
+    process.env.MONGODB_HOST,
+    process.env.MONGODB_PORT,
+    process.env.MONGODB_DB,
+    process.env.MONGODB_USER,
+    process.env.MONGODB_PASSWORD,
+    (err) => {
+        if (err) {
+            console.error(err);
+            process.exit(1);
+        }
+    },
+);
+
 app.listen(port, host, () => {
     console.log(`Server is running on ${host}:${port}`);
 });
