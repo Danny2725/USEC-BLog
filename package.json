@@ -3,6 +3,7 @@
     "date-fns": "^2.30.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.4.1",
     "concurrently": "^8.2.2"
   },
   "scripts": {
