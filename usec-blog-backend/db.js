@@ -1,7 +1,8 @@
 const { MongoClient } = require("mongodb");
 
-// /** @type {import("mongodb").MongoOptions} */
-// const dbOptions = {};
+/**
+ * @type {MongoClient}
+ */
 let client = null;
 
 /**
@@ -14,7 +15,7 @@ let client = null;
  * @param {} callback Callback function to be called after the connection is established
  * @returns {void}
  */
-function connect(
+async function connect(
     host,
     // biome-ignore lint/style/useDefaultParameterLast: Just so that it follows the natural order of parameters
     port = 27017,
@@ -37,14 +38,13 @@ function connect(
     );
     client = new MongoClient(connectionString);
 
-    client.connect((err) => {
-        if (err) {
-            client = null;
-            callback(err);
-        } else {
-            callback();
-        }
-    });
+    try {
+        await client.connect();
+    } catch (err) {
+        console.error(err);
+    } finally {
+        callback();
+    }
 }
 
 function db(dbName) {
